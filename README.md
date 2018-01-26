@@ -2,6 +2,14 @@
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
+[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+
+## Demos
+
+* [Netlify](https://eleventy-base-blog.netlify.com/)
+* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)—seriously, just click OK a few times and it’s live—Netlify is amazing.
+* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
+
 ## Getting Started
 
 ### 1. Clone this repository:
@@ -25,7 +33,9 @@ Specifically have a look at `.eleventy.js` to see if you want to configure any E
 npm install
 ```
 
-### 4. Run Eleventy
+### 4. Edit _data/metadata.json
+
+### 5. Run Eleventy
 
 ```
 npx eleventy
@@ -53,4 +63,4 @@ DEBUG=* npx eleventy
   * `_includes/layouts/base.njk`: the top level HTML structure
   * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
   * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-* `_includes/postlist.njk` is a Nunjucks macro and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+* `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
